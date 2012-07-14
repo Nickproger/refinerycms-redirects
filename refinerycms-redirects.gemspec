@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-redirects}
-  s.version           = %q{0.1.1}
+  s.version           = %q{0.1.2}
   s.summary           = %q{Redirects for Refinery}
   s.description       = %q{Enables management of multiple redirects}
   s.email             = %q{johnagan@gmail.com}
