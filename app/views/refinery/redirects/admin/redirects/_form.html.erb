@@ -1,0 +1,29 @@
+<%= form_for [refinery, :redirects_admin, @redirect] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @redirect,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :slug -%>
+    <%= f.text_field :slug  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :url -%>
+    <%= f.text_field :url, :class => 'widest'   -%>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.redirects.admin.redirects.redirect'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @redirect.title) %>
+<% end -%>

@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Maak een nieuwe Redirect
+            reorder: Wijzig de volgorde van de Redirects
+            reorder_done: Klaar met het wijzingen van de volgorde van de Redirects
+          records:
+            title: Redirects
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Redirects. Druk op 'Maak een nieuwe Redirect' om de eerste aan te maken.
+          redirect:
+            view_live_html: Bekijk deze redirect op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze redirect
+            delete: Verwijder deze redirect voor eeuwig
+      redirects:
+        show:
+          other: Andere Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        title: Title
+        slug: Slug
+        url: Url
